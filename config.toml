@@ -1,0 +1,7 @@
+languageCode = "en-us"
+title = "EGo - Build confidential Go apps with ease​"
+theme = "ego"
+enableEmoji = true
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "manni"

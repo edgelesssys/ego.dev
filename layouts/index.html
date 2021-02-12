@@ -1,0 +1,146 @@
+{{ partial "header.html" . }}
+
+<div class="cover">
+	<div class="container py-5 text-center">
+		<div class="row justify-content-md-center my-5 pb-5">
+			<div class="col-12 col-lg-8">
+				<div class="">
+					<h1 class="display-3 font-weight-bold">{{ .Params.claim | markdownify }}</h1>
+					<p class="text-muted h5">{{ .Params.description | markdownify }}</p>
+					<br>
+
+					<a class="github-button" href="https://github.com/edgelesssys/ego" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star EGo on GitHub">Star</a>
+
+					<a class="github-button" href="https://github.com/edgelesssys/ego/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork EGo on GitHub">Fork</a>
+
+					<!-- <div class"desktop-space"></div> -->
+				</div>
+
+			</div>
+		</div>
+		<div style="position: relative;">
+			<img class="hero-oval" src="/img/index-hero-oval.svg">
+			<video autoplay muted loop class="rounded shadow w-75">
+				<source src="/img/ego4_fast_1080p.mp4" type="video/mp4">
+			</video>
+			<script>
+				document.querySelector('video').playbackRate = 0.4;
+			</script>
+		</div>
+
+	</div>
+</div>
+
+<section class="my-5 container py-5">
+	<div class="row">
+		<div class="col-12 col-lg-6">
+			<div style="position: relative;">
+				<h2 class="font-weight-bold heading-underline">{{ .Params.why.title }}</h2>
+			</div>
+
+			<p>{{ .Params.why.description | markdownify }}</p>
+			<ul class="list-unstyled">
+				{{ range .Params.why.points }}
+				<li class="my-2 font-weight-bold"><img src="/img/checked.svg" width="18px"> &nbsp;{{ . }}</li>
+				{{ end }}
+			</ul>
+		</div>
+		<!--
+		<div class="col-12 col-lg-6">
+			<img style="max-width: 100%;" src="/img/{{ .Params.why.image }}">
+		</div>
+		-->
+	</div>
+</section>
+
+<section class="my-5 container py-5">
+	<div class="row">
+
+		<div class="mt-5 col-12 col-lg-6 order-2 order-lg-1">
+			<div class="terminal">
+				<div class="header">
+					<span class="closeBtn"></span>
+					<span class="maximize"></span>
+					<span class="minimize"></span>
+				</div>
+				<div class="window">
+					$ ego-go build helloworld.go<br>
+					$ ego sign helloworld<br>
+					$ ego run helloworld<br>
+					<span class="text-primary">Loading enclave...</span><br>
+					<span class="text-primary">Entering enclave...</span><br>
+					Hello from enclave!
+				</div>
+			</div>
+		</div>
+
+		<div class="col-12 col-lg-6 d-flex align-items-center order-1 order-lg-2">
+			<div>
+				<div style="position: relative;">
+					<h2 class="font-weight-bold heading-underline">{{ .Params.howToUse.title }}</h2>
+				</div>
+				{{ .Params.howToUse.description | markdownify }}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="my-5 container rounded px-4 py-5 ">
+
+	<div style="position: relative;">
+		<h2 class="font-weight-bold heading-underline">{{ .Params.features.heading }}</h2>
+	</div>
+	<div class="row my-5 text-center justify-content-lg-center">
+		{{ range .Params.features.items }}
+		<div class="col-12 col-lg-4 mb-4">
+			<div class="feature py-4">
+				<h5 class=""><i class="h2 {{ .icon }}"></i><br> {{ .title | markdownify }}</h5>
+				<p class="text-muted">{{ .description | markdownify }}</p>
+			</div>
+
+		</div>
+		{{ end }}
+	</div>
+</section>
+
+<section class="my-5 py-5" style="background-color: #f2f2f2;">
+	<div class="container ">
+
+		<div class="row justify-content-md-center text-center text-lg-left">
+			<div class="col-lg-2 col-12">
+				<img src="/img/logo-mini.png" style="max-width: 200px">
+			</div>
+			<div class="col-lg-8 col-12">
+				<h2 class="p-1 font-weight-bold mx-auto d-inline-block d-lg-none">{{ .Params.banner.heading }}</h2>
+				<h2 class="p-1 font-weight-bold display-4 mx-auto d-none d-lg-inline-block"> {{ .Params.banner.heading }}</h2>
+				<br>
+				<a class="btn btn-primary text-white btn-lg mt-4 shadow-sm font-weight-bold" href="{{ .Params.banner.button.href }}">
+					{{ .Params.banner.button.title | markdownify }}
+				</a>
+			</div>
+		</div>
+
+	</div>
+</section>
+<br>
+
+<section class="my-5 container pt-5">
+	<div style="position: relative;">
+		<h2 class="font-weight-bold heading-underline">{{ .Params.blog.title }}</h2>
+	</div>
+
+	<div class="row mt-5">
+		{{ range .Params.blog.items }}
+		<div class="col-12 col-lg-6 mb-5">
+			<div class="feature">
+				<div class="col-lg-11 col-12">
+					<h4 class="font-weight-bold w-75">{{ .title | markdownify }}</h4>
+					{{ .description }}
+				</div>
+			</div>
+		</div>
+		{{ end }}
+	</div>
+</section>
+
+{{ partial "footer.html" . }}

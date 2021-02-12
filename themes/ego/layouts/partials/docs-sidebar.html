@@ -1,0 +1,18 @@
+<div class="docsSidebar">
+  {{ range .Site.Sections }}
+  {{ if eq .Title "Docs" }}
+  {{ range .Pages }}
+  <div class="mb-3">
+    {{ if .IsSection }}
+    <h6>{{ .Title }}</h6>
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="d-block pl-3">{{ .Title }}</a>
+    {{ end }}
+    {{ else if and .IsPage .Content }}
+    <a href="{{ .Permalink }}" class="d-block">{{ .Title }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</div>
