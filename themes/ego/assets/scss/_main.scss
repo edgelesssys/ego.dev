@@ -84,11 +84,13 @@ article {
   }
 }
 
-.heading-underline {
+.heading-highlight {
   display: block;
   margin-bottom: 40px;
   background-color: $edg-dark;
   color: $edg-light-gray;
+  padding-left: .2em;
+  border-radius: 8px;
 }
 
 .highlight:after {

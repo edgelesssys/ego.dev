@@ -12,7 +12,7 @@ why:
     Developing confidential apps used to require arcane knowledge, significant code changes, and cumbersome build steps. With EGo, you can skip that and develop your Go code as usual.
 
 
-    In the video above, we use [Visual Studio Code](https://code.visualstudio.com/) to debug unmodified [HashiCorp Vault](https://www.vaultproject.io/) running on EGo in an Intel&reg; SGX enclave. (Of course, secure enclaves cannot be debugged in production 😉)
+    In the video above, [Visual Studio Code](https://code.visualstudio.com/) is used to debug unmodified [HashiCorp Vault](https://www.vaultproject.io/) running on EGo in an Intel&reg; SGX enclave in debug mode.
   image: "why.png"
   points:
     - Build, debug, and run Go apps as usual

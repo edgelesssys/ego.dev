@@ -35,15 +35,23 @@
 	<div class="row">
 		<div class="col-12 col-lg-6">
 			<div style="position: relative;">
-				<h2 class="font-weight-bold heading-underline">{{ .Params.why.title }}</h2>
+				<h2 class="font-weight-bold heading-highlight">{{ .Params.why.title }}</h2>
 			</div>
 
-			<p>{{ .Params.why.description | markdownify }}</p>
-			<ul class="list-unstyled">
-				{{ range .Params.why.points }}
-				<li class="my-2 font-weight-bold"><img src="/img/checked.svg" width="18px"> &nbsp;{{ . }}</li>
-				{{ end }}
-			</ul>
+			{{ .Params.why.description | markdownify }}
+
+			<div class="my-3 py-3">
+				<ul class="list-unstyled">
+					{{ range .Params.why.points }}
+					<li class="my-3" style="font-size: large;">
+						<div style="display: flex;">
+							<img src="/img/checked.svg" width="35em">
+							<div class="ml-3 pl-1 text-left rounded" style="flex: content; background-color: #f2f2f2; width: 100%;">{{ . }}</div>
+						</div>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
 		</div>
 		<!--
 		<div class="col-12 col-lg-6">
@@ -77,7 +85,7 @@
 		<div class="col-12 col-lg-6 d-flex align-items-center order-1 order-lg-2">
 			<div>
 				<div style="position: relative;">
-					<h2 class="font-weight-bold heading-underline">{{ .Params.howToUse.title }}</h2>
+					<h2 class="font-weight-bold heading-highlight">{{ .Params.howToUse.title }}</h2>
 				</div>
 				{{ .Params.howToUse.description | markdownify }}
 			</div>
@@ -88,7 +96,7 @@
 <section class="my-5 container rounded px-4 py-5 ">
 
 	<div style="position: relative;">
-		<h2 class="font-weight-bold heading-underline">{{ .Params.features.heading }}</h2>
+		<h2 class="font-weight-bold heading-highlight">{{ .Params.features.heading }}</h2>
 	</div>
 	<div class="row my-5 text-center justify-content-lg-center">
 		{{ range .Params.features.items }}
@@ -126,7 +134,7 @@
 
 <section class="my-5 container pt-5">
 	<div style="position: relative;">
-		<h2 class="font-weight-bold heading-underline">{{ .Params.blog.title }}</h2>
+		<h2 class="font-weight-bold heading-highlight">{{ .Params.blog.title }}</h2>
 	</div>
 
 	<div class="row mt-5">
