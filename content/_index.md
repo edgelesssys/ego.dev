@@ -25,7 +25,7 @@ howToUse:
     With EGo, you don't need to refactor your app to run it in a secure enclave. Just use three simple commands to build, sign, and run your code - be it 10 or 100,000 lines of Go with complex dependencies.
 
 
-    **Want to scale your confidential app?** [Marblerun](https://marblerun.sh/) - "the service mesh for confidential computing" - has native support for EGo-based microservices and makes it easy to securely scale confidential apps on [Kubernetes](www.kubernetes.io).
+    **Want to scale your confidential app?** [Marblerun](https://marblerun.sh/) - "the service mesh for confidential computing" - has native support for EGo-based microservices and makes it easy to securely scale confidential apps on [Kubernetes](https://kubernetes.io).
 
 
     **Want to use Intel&reg; SGX features like sealing or remote attestion?** Easy! Just import EGo's [enclave library](https://github.com/edgelesssys/ego/blob/master/enclave/enclave.go) and access everything in a single line. For example, get an attestation report for your TLS certificate: `r, err := enclave.GetRemoteReport(sha256.Sum256(cert)[:])`
