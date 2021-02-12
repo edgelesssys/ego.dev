@@ -28,7 +28,7 @@ howToUse:
     **Want to scale your confidential app?** [Marblerun](https://marblerun.sh/) - "the service mesh for confidential computing" - has native support for EGo-based microservices and makes it easy to securely scale confidential apps on [Kubernetes](https://kubernetes.io).
 
 
-    **Want to use Intel&reg; SGX features like sealing or remote attestion?** Easy! Just import EGo's [enclave library](https://github.com/edgelesssys/ego/blob/master/enclave/enclave.go) and access everything in a single line. For example, get an attestation report for your TLS certificate:
+    **Want to use Intel&reg; SGX features like sealing or remote attestion?** Easy! Just import EGo's [enclave library](https://github.com/edgelesssys/ego/blob/master/enclave/enclave.go) and access everything in a single line of code. For example, get an attestation report for your TLS certificate:
 
 
     `r, err := enclave.GetRemoteReport(sha256.Sum256(cert)[:])`
@@ -56,6 +56,10 @@ features:
       icon: fas fa-running
       description:
         Don't have SGX-enabled hardware? No problem! EGo apps run in simulation mode on any host. Also, many cloud providers already offer SGX-enabled VMs.
+    - title: Lightweight
+      icon: fas fa-feather
+      description:
+        EGo does not try to simulate a full POSIX environment in your enclave. It just loads as much code as necessary for the Go runtime to work well, keeping the trusted computing base (TCB) small.
 
 banner:
   heading: Want to build confidential Go apps?​
@@ -66,11 +70,14 @@ banner:
 blog:
   title: Blog
   items:
-    - title: "[We’re Hosting the Open Confidential Computing Conference 2021!](https://medium.com/edgelesssystems/were-hosting-the-open-confidential-computing-conference-2021-72a847223bd1)"
-      description: Come join us for free on March 11 and learn more about EGo and other exciting open-source projects for confidential computing!
+    - title: "[The Open-Source Landscape of Confidential Computing in 2021](https://medium.com/edgelesssystems/the-open-source-landscape-of-confidential-computing-in-2021-7f847ebfc0a9)"
+      description: We give an overview of the open-source landscape in confidential computing and show where EGo fits in.
 
     - title: "[4 Use Cases for Confidential Computing](https://medium.com/edgelesssystems/4-use-cases-for-confidential-computing-34f62e77a4de)"
       description: We discuss specialized use cases for confidential computing that can be realized with EGo.
+
+    - title: "[We’re Hosting the Open Confidential Computing Conference 2021!](https://medium.com/edgelesssystems/were-hosting-the-open-confidential-computing-conference-2021-72a847223bd1)"
+      description: Come join us for free on March 11 and learn more about EGo and other exciting open-source projects for confidential computing!
 
     - title: "[Why Do We Need Confidential Computing?](https://medium.com/edgelesssystems/why-we-need-a-service-mesh-for-confidential-computing-part-1-3-28f4bd6df679)"
       description: We give an intro to the basics of confidential computing.
