@@ -28,7 +28,10 @@ howToUse:
     **Want to scale your confidential app?** [Marblerun](https://marblerun.sh/) - "the service mesh for confidential computing" - has native support for EGo-based microservices and makes it easy to securely scale confidential apps on [Kubernetes](https://kubernetes.io).
 
 
-    **Want to use Intel&reg; SGX features like sealing or remote attestion?** Easy! Just import EGo's [enclave library](https://github.com/edgelesssys/ego/blob/master/enclave/enclave.go) and access everything in a single line. For example, get an attestation report for your TLS certificate: `r, err := enclave.GetRemoteReport(sha256.Sum256(cert)[:])`
+    **Want to use Intel&reg; SGX features like sealing or remote attestion?** Easy! Just import EGo's [enclave library](https://github.com/edgelesssys/ego/blob/master/enclave/enclave.go) and access everything in a single line. For example, get an attestation report for your TLS certificate:
+
+
+    `r, err := enclave.GetRemoteReport(sha256.Sum256(cert)[:])`
 
 features:
   heading: Features
