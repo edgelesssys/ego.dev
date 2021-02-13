@@ -17,7 +17,7 @@ why:
   points:
     - Build, debug, and run Go apps as usual
     - Have all the benefits of confidential computing
-    - Open-source and free to use​
+    - Permissive open-source license (MPL-2)​
 
 howToUse:
   title: How to Use​
