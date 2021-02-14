@@ -35,7 +35,7 @@
 	<div class="row">
 		<div class="col-12 col-lg-6">
 			<div style="position: relative;">
-				<h2 class="font-weight-bold heading-highlight">{{ .Params.why.title }}</h2>
+				<h2 class="heading-highlight">{{ .Params.why.title }}</h2>
 			</div>
 
 			{{ .Params.why.description | markdownify }}
@@ -83,7 +83,7 @@
 		<div class="col-12 col-lg-6 d-flex align-items-center order-1 order-lg-2">
 			<div>
 				<div style="position: relative;">
-					<h2 class="font-weight-bold heading-highlight">{{ .Params.howToUse.title }}</h2>
+					<h2 class="heading-highlight">{{ .Params.howToUse.title }}</h2>
 				</div>
 				{{ .Params.howToUse.description | markdownify }}
 			</div>
@@ -94,7 +94,7 @@
 <section class="my-5 container rounded px-4 py-5 ">
 
 	<div style="position: relative;">
-		<h2 class="font-weight-bold heading-highlight">{{ .Params.features.heading }}</h2>
+		<h2 class="heading-highlight">{{ .Params.features.heading }}</h2>
 	</div>
 	<div class="row my-5 text-center justify-content-lg-center">
 		{{ range .Params.features.items }}
@@ -132,7 +132,7 @@
 
 <section class="my-5 container pt-5">
 	<div style="position: relative;">
-		<h2 class="font-weight-bold heading-highlight">{{ .Params.blog.title }}</h2>
+		<h2 class="heading-highlight">{{ .Params.blog.title }}</h2>
 	</div>
 
 	<div class="row mt-5">

@@ -87,10 +87,9 @@ article {
 .heading-highlight {
   display: block;
   margin-bottom: 40px;
-  background-color: $edg-dark;
-  color: $edg-teal;
+  background-color: $edg-light-gray;
+  color: $edg-dark;
   padding-left: .2em;
-  border-radius: 8px;
 }
 
 .highlight:after {
@@ -100,16 +99,17 @@ article {
 .checked-box {
   display: flex;
   flex: content;
-  background-color: $edg-light-gray;
+  //background-color: $edg-light-gray;
   padding-left: .2em;
-  border-radius: 8px;
-  width: 100%;
+  border-radius: 4px;
+  font-size: large;
   font-weight: bold;
+  width: 100%;
 }
 
 .terminal {
   background-color: #2f2f2f;
-  border-radius: 8px;
+  border-radius: 4px;
   max-width: 500px;
   width: 100%;
 
