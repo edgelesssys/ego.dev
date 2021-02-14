@@ -88,13 +88,23 @@ article {
   display: block;
   margin-bottom: 40px;
   background-color: $edg-dark;
-  color: $edg-light-gray;
+  color: $edg-teal;
   padding-left: .2em;
   border-radius: 8px;
 }
 
 .highlight:after {
   content: "";
+}
+
+.checked-box {
+  display: flex;
+  flex: content;
+  background-color: $edg-light-gray;
+  padding-left: .2em;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
 }
 
 .terminal {

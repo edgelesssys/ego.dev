@@ -13,7 +13,7 @@ why:
 
 
     In the video above, [Visual Studio Code](https://code.visualstudio.com/) is used to debug unmodified [HashiCorp Vault](https://www.vaultproject.io/) running on EGo in an Intel&reg; SGX enclave in debug mode.
-  image: "why.png"
+  image: "text_only.svg"
   points:
     - Build, debug, and run Go apps as usual
     - Have all the benefits of confidential computing
