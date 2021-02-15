@@ -51,7 +51,7 @@ features:
     - title: Built on industry standards
       icon: fas fa-layer-group
       description:
-        EGo builds upon the industry standard [Open Enclave](https://openenclave.io/). This makes it future-proof and independent of SGX.
+        EGo builds upon the industry standard [Open Enclave](https://openenclave.io/). This makes it future-proof and portable to other hardware platforms. EGo also supports the latest [DCAP](https://github.com/intel/SGXDataCenterAttestationPrimitives) attestation protocol.
     - title: Runs everywhere
       icon: fas fa-running
       description:
