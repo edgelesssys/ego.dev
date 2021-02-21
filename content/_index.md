@@ -70,6 +70,9 @@ banner:
 blog:
   title: Blog
   items:
+    - title: "[EGo: Effortlessly build confidential apps in Go](https://medium.com/edgelesssystems/ego-effortlessly-build-confidential-apps-in-go-dc2b1460e1bf)"
+      description: We give an intro to EGo and discuss features.
+
     - title: "[The Open-Source Landscape of Confidential Computing in 2021](https://medium.com/edgelesssystems/the-open-source-landscape-of-confidential-computing-in-2021-7f847ebfc0a9)"
       description: We give an overview of the open-source landscape in confidential computing and show where EGo fits in.
 
