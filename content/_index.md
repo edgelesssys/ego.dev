@@ -1,12 +1,12 @@
 ---
-title: EGo - Build confidential Go apps with ease​
+title: EGo - Build confidential Go (golang) apps with ease​
 claim: Build Confidential Go Apps with Ease​
 description: EGo enables you to build and run Go code for Intel&reg; SGX enclaves with zero code changes.​
 
 why:
   title: Why EGo
   description:
-    Confidential computing enables the always-encrypted and verifiable processing of data - in the cloud and elsewhere. It is a breakthrough approach that solves many security and privacy problems.
+    Confidential computing enables the always-encrypted and verifiable processing of data - in the cloud and elsewhere. This breakthrough approach that solves many security and privacy problems.
 
 
     Developing confidential apps used to require arcane knowledge, significant code changes, and cumbersome build steps. With EGo, you can skip that and develop your Go code as usual.
@@ -28,7 +28,7 @@ howToUse:
     **Want to scale your confidential app?** [Marblerun](https://marblerun.sh/) - "the service mesh for confidential computing" - has native support for EGo-based microservices and makes it easy to securely scale confidential apps on [Kubernetes](https://kubernetes.io).
 
 
-    **Want to use Intel&reg; SGX features like sealing or remote attestion?** Easy! Just import EGo's [enclave library](https://pkg.go.dev/github.com/edgelesssys/ego@v0.1.0/enclave#section-documentation) and access everything in a single line of code. For example, get an attestation report for your TLS certificate:
+    **Want to use Intel&reg; SGX features like sealing or remote attestion?** Just import EGo's [enclave library](https://pkg.go.dev/github.com/edgelesssys/ego@v0.1.0/enclave#section-documentation) and access everything in a single line of code. For example, get an attestation report for your TLS certificate:
 
 
     `r, err := enclave.GetRemoteReport(sha256.Sum256(cert)[:])`

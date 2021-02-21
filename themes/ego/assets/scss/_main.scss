@@ -87,9 +87,10 @@ article {
 .heading-highlight {
   display: block;
   margin-bottom: 40px;
-  background-color: $edg-light-gray;
+  background-color: $edg-teal;
   color: $edg-dark;
   padding-left: .2em;
+  padding-right: .2em;
 }
 
 .highlight:after {
