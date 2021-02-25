@@ -1,7 +1,7 @@
 ---
 title: EGo - Build confidential Go (golang) apps with ease​
 claim: Build Confidential Go Apps with Ease​
-description: EGo enables you to build and run Go code for Intel&reg; SGX enclaves with zero code changes.​
+description: EGo enables you to run Go apps in Intel&reg; SGX enclaves with zero code changes.​
 
 why:
   title: Why EGo
