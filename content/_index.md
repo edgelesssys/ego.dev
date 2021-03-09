@@ -65,7 +65,7 @@ banner:
   heading: Want to build confidential Go apps?​
   button:
     title: Get started →
-    href: https://github.com/edgelesssys/ego#quick-start
+    href: https://github.com/edgelesssys/ego#install
 
 blog:
   title: Blog
